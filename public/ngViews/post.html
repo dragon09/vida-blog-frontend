@@ -1,0 +1,10 @@
+<section class="post-full" ng-model='posts'>
+    <article>
+        <h4 class='post-header'>{{ posts[whichItem].title }}</h4>
+        <img class='post-image' src='{{ posts[whichItem].image }}' />
+        <p class='post-author'>By: {{ posts[whichItem].author | uppercase}}</p>
+        <p class='post-category'>in {{ posts[whichItem].category | uppercase}}</p>
+        <p class='post-text'>{{ posts[whichItem].content }}</p>
+    </article>
+    <a href="/blog">Return</a>
+</section>

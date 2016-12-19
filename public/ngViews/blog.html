@@ -1,0 +1,30 @@
+<div id='search'>
+    <span class='fa fa-search'></span>
+    <input placeholder='Search all posts by category, name or author.' class='search-bar' autofocus ng-model='query'>
+    <label class="formgroup">or order by:
+        <select ng-model="orderPlayers" class='decorated'>
+            <option value="title">Title</option>
+            <option value="category">Category</option>
+        </select>
+    </label>
+</div>
+<div id='sortBy'>
+
+</div>
+<section id='posts-section'>
+    <article ng-repeat = 'item in posts | filter: query | orderBy: orderPlayers' class='blog-post'>
+        <div class='post-image-wrapper'>
+            <img class='post-image' src='{{ item.image }}' />
+        </div>
+        <p class='post-category'>{{ item.category | uppercase}}</p>
+        <hr class='grey'>
+        <h4 class='post-header'>{{ item.title }}</h4>
+        <!--<p class='post-author'>By: {{ item.author }}</p>-->
+        <br>
+        <p class='post-text'>Nulla eget semper neque, et gravida magna. Ut semper ullamcorper finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque neque lectus, maximus a posuere at, tincidunt ac lectus. Vivamus sodales aliquet lorem in iaculis</p>
+        <br>
+        <a href="#/post/{{ posts.indexOf(item) }}">
+            <button class='blog-post-read-more'>Read more</button>
+        </a>
+    </article>
+</section>

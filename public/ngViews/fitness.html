@@ -1,0 +1,11 @@
+<p class="intro-pages">All posts in: <span class="intro-pages-category">fitness</span></p>
+<section class='posts-section-pages'>
+    <article ng-repeat='item in posts | filter: "fitness"' class='blog-post-pages'>
+        <!--<p class='post-category-pages'>in {{ item.category | uppercase}}</p>-->
+        <h4 class='post-header-pages'>{{ item.title }}</h4>
+        <p class='post-author-pages'><span class='byline-pages'>by </span> {{ item.author}}</p>
+        <p class='post-text-pages'>{{ item.content }}</p>
+        <h5 class='tag-header-pages'>Filed under: &nbsp;</h5><p class='tags'><a href="./{{item.tags}}"> {{ item.tags }}</a></p>
+    </article>
+</section>
+<p class="outro">... that's all for now.</p>

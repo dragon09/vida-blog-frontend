@@ -1,0 +1,61 @@
+<html ng-app='vidaBlog'>
+
+<head>
+  <title>Vida - A Lifestyle Blog</title>
+  <!-- scripts -->
+  <script type='text/javascript' src='/javascripts/angular.js'></script>
+  <script type='text/javascript' src='/javascripts/angular-route.js'></script>
+  <script type='text/javascript' src='/javascripts/app.js'></script>
+  <script type='text/javascript' src='/javascripts/HomeCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/BlogCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/LifestyleCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/CookingCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/FitnessCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/ShoppingCtrl.js'></script>
+  <script type='text/javascript' src='/javascripts/PostCtrl.js'></script>
+  <!-- stylesheets -->
+  <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  <link rel='stylesheet' href='/stylesheets/grid.css' />
+</head>
+
+<body>
+  <!--main-container: this includes both navs-->
+  <div id='main-container' class='container'>
+    <nav id='loginNav'>
+      <a href='/login'>Register</a>
+      <span id="nav-divider">or</span>
+      <a href='/login'>Log In</a>
+    </nav>
+
+    <section id='logoHeader'>
+      <h1>VIDA</h1>
+    </section>
+
+    <section id='main-nav-wrapper' class='grid_12'>
+      <nav id='main-nav'>
+        <a href='/'>Home</a>
+        <a href='/blog'>Blog</a>
+        <a href='/lifestyle'>Lifestyle</a>
+        <a href='/cooking'>Cooking</a>
+        <a href='/fitness'>Fitness</a>
+        <a href='/shopping'>Shopping</a>
+      </nav>
+    </section>
+  </div>
+  <!--end of main-container-->
+
+  <div id='body-container' class='container'>
+    <div ng-view> </div>
+  </div>
+
+  <!--footer-->
+  <footer>
+    <div id="footer-wrapper" class="container">
+      &copy; 2016 - Arnold Rozon for General Assembly
+    </div>
+  </footer>
+  <!--end footer-->
+
+</body>
+</html>

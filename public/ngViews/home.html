@@ -1,0 +1,39 @@
+<section id='hero-frame' class='grid_12 omega' ng-repeat='item in posts | limitTo: 1 | uppercase'>
+    <p class="section-header-hero">Featured Article</p>
+    <p class="section-subheader-hero">Cooking</p>
+    <p class='hero-header'>{{ item.title }}</p>
+    <hr class='desc-rule black'>
+    <p class='post-author-hero'><span class='byline-hero'>written by </span> {{ item.author}}</p>
+    <a href='#' class='read-more-hero'>Read More</a>
+</section>
+
+<section id='featured' class='grid_7 omega'>
+    <article ng-repeat='item in posts | limitTo: 1 | uppercase'>
+        <p class="section-header">Weekly Editorial</p>
+        <p class='featured-header'>{{ '"' + item.title + '"'}}</p>
+        <p class='post-author-featured'><span class='byline-featured'>by </span> {{ item.author}}</p>
+        <p class='featured-content'>{{ item.content }}</p>
+    </article>
+</section>
+
+<section id='secondary-featured' class='grid_5 omega'>
+    <!--<svg width="31" height="31" id="rhom">-->
+        <!--<rect x="12" y="-10" width="20" height="20" transform="rotate(45)" />-->
+    <!--</svg>-->
+    <article id='secondary-featured-text' class='desc-box'>
+        <p class='desc-box-title'>Sed Mattis</p>
+        <hr class='desc-rule'>
+        <p class='desc-box-text'>Description of the corresponding article or something of the sort.</p>
+        <a href="#" class='read-more-small'>Read More</a>
+    </article>
+</section>
+
+<a href="#">
+    <section id='tertiary-featured' class='grid_5 omega photo-box'>
+        <article ng-repeat='item in posts | limitTo: 1 | uppercase'>
+            <p class='photo-box-title'>Vestibulum Ante Ipsum</p>
+            <hr class='desc-rule'>
+            <p class='photo-box-text'>Description of the corresponding article or something of the sort.</p>
+        </article>
+    </section>
+</a>
