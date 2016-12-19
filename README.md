@@ -40,8 +40,11 @@ API SERVER
 * CRUD/MVC
 * GITHUB
 
+<<<<<<< HEAD
 CONCEPT
 
+=======
+>>>>>>> 176494c4025783890facf05b8e374d9c6fd9a79e
 
 **CONCEPT**
 
