@@ -3,7 +3,7 @@
 VIDA Lifestyle Blog
 ====================
 
-![HEADER](/images/vidablogheader.png)
+![VIDA Lifestyle Blog](/images/vidablogheader.png)
 
 *An original lifestyle blog created by Victoria Fajardo, Anita Wright, and Arnold Rozon*. This blog application is a RESTful API created, from the ground up, using the following technical languages, software libraries, and frameworks:
 
